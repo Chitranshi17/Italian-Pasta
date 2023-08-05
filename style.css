@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+nav{
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    width: 100%;
+    height: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-nav{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-nav .logo{
+    width: 26%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 70%;
+    height: auto;
+}
+.left-nav img:hover{
+    cursor: pointer;
+}
+.mid-nav{
+    width: 70%;
+    height: auto;
+}
+.mid-nav ul{
+    width: 95%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mid-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+.mid-nav ul li a:hover{
+    color: rgb(151, 148, 148);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.right-nav{
+    width: 13%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.search, .menu-bar{
+    width: 20%;
+    height: 100%;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.search i, .menu-bar i{
+    font-size: 3rem;
+    color: white;
+}
+.search i:hover, .menu-bar i:hover{
+    color: rgb(151, 148, 148);
+    cursor: pointer;
+}
+
+
+
+/* main section */
+
+main{
+    width: 95%;
+    height: auto;
+}
+
+/* top section */
+.top{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+}
+/* top - left section  */
+.left-sec{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+.name p{
+    font-size: 5rem;
+    color: white;
+    font-weight: 100;
+}
+.name h1{
+    font-size: 6rem;
+    color: white;
+}
+.name h6{
+    font-size: 2.5rem;
+    color: rgb(234, 229, 229);
+}
+.name span{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+.name span button{
+    width:25%;
+    height: 6rem;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+.name span button:hover{
+    cursor: pointer;
+    box-shadow: .3rem .2rem .3rem white;
+}
+.name span h4{
+    font-size: 2rem;
+    color: white;
+    padding-left: 5rem;
+}
+.name span h4:hover{
+    cursor: pointer;
+}
+
+/* top - right section */
+.right-sec{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    width: 25rem;
+    height: 25rem;
+    border: .1rem solid white;
+    border-radius: 100%;
+    background: url(./image/image-removebg-preview\ \(31\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.circle:hover{
+    transition: all ease-in-out 2s;
+    transform: scale(120%);
+    filter:drop-shadow(100%);
+    cursor: pointer;
+}
+.circle1{
+    width: 25rem;
+    height: 25rem;
+    border: .1rem solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 3rem;
+}
+.circle1:hover{
+    transition: all ease-in-out 2s;
+    transform: scale(90%);
+    filter:grayscale(100%);
+}
+.circle2{
+    width: 30rem;
+    height: 30rem;
+    border: .1rem solid white;
+    border-radius: 100%;
+    position: relative;
+    bottom: 4rem;
+    right: 2rem;
+}
+.t{
+    width: 7rem;
+    height: 7rem;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    background: url(./image/tomato.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.t:hover{
+    transition: all ease-in-out 2s;
+    transform: scale(120%);
+    filter: grayscale(100%);
+}
+.p{
+    width: 8rem;
+    height: 8rem;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    background: url(./image/pudina.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.p:hover{
+    transition: all ease-in-out 2s;
+    transform: scale(120%);
+    filter: grayscale(100%);
+}
+.p1{
+    position: relative;
+    top: 6rem;
+    z-index: 7;
+    /* background-color: rgba(255, 255, 255, 0.169); */
+}
+.p2{
+    position: relative;
+    bottom: 15rem;
+    /* background-color: rgba(255, 255, 255, 0.169); */
+}
+.p3{
+    position: relative;
+    top: 15rem;
+    /* background-color: rgba(255, 255, 255, 0.169); */
+    right: 10rem;
+}
+.t1{
+    position: relative;
+    top: 8rem;
+    /* background-color: rgba(255, 255, 255, 0.169); */
+}
+.t2{
+    position: relative;
+    bottom: 9rem;
+    /* background-color: rgba(255, 255, 255, 0.169); */
+}
+.t3{
+    z-index: 7;
+    /* background-color: rgba(255, 255, 255, 0.169); */
+}
+
+
+/* bottom-section */
+.bottom{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    width: 90%;
+    height: 90%;
+    background-color: orange;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-grid{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-show{
+    width: 90%;
+    /* height: 90%;
+    background-color: white; */
+    display: grid;
+    grid-template-columns: repeat(6,15%);
+    grid-template-rows: repeat(1,18rem);
+    column-gap: 2rem;
+}
+.chart{
+    border: .1rem solid white;
+    background-color: white;
+    border-radius: 3rem;
+}
+.chart:first-child{
+    background: url(./image/fried-rice.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chart:nth-child(2){
+    background: url(./image/panner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chart:nth-child(3){
+    background: url(./image/panne\ pasta.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chart:nth-child(4){
+    background: url(./image/pizza.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chart:nth-child(5){
+    background: url(./image/pollo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chart:nth-child(6){
+    background: url(./image/thai.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chart:hover{
+    transition: all ease-in-out 1s;
+    transform: scale(90%);
+    cursor: pointer;
+}
+.icon-circle{
+    width: 5rem;
+    height: 5rem;
+   border-radius: 50%;
+    background-color: rgb(36, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-circle:hover{
+    cursor: pointer;
+    background-color: rgba(88, 75, 75, 0.539);
+}
+.icon-circle i{
+    color: white;
+    font-size: 2.5rem;
+}
+.icon-circle i:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+/* responsive images */
+
+@media(max-width:1250px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:1000px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (max-width:850px){
+    html{
+        font-size: 35%;
+    }
+}
+
+@media (max-width:768px) {
+    html{
+        font-size: 30%;
+    }
+    nav{
+        height: 12rem;
+    }
+    .mid-nav{
+        display: none;
+    }
+    .right-nav{
+        width: 20%;
+    }
+    .menu-bar i, .search i{
+        font-size: 5rem;
+    }
+    .left-nav .logo{
+        width: 50%;
+    }
+    .top{
+        height: auto;
+        flex-direction: column;
+    }
+    .left-sec{
+        width: 100%;
+        height: 40rem;
+    }
+    
+    .right-sec{
+        width: 100%;
+        height: 45rem;
+    }
+    .menu-show{
+        grid-template-columns: repeat(1,100%);
+        grid-template-rows: repeat(6,20rem);
+        row-gap: 2rem;
+    }
+    .bottom{
+        height: auto;
+    }
+    .menu{
+        width: 90%;
+        padding: 2rem;
+        background-color: black;
+        /* border-radius: 0rem; */
+    }
+    .icon-circle{
+        background-color: white;
+    }
+    .icon-circle i{
+        color: black;
+    }
+    .name{
+        align-items: center;
+    }
+    .name h6{
+        text-align: center;
+    }
+    .name span{
+        justify-content: center;
+    }
+}
+
+@media (max-width:400px) {
+    html{
+        font-size: 20%;
+    }
+}
